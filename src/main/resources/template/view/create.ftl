@@ -9,7 +9,7 @@
         <form action="${'$'}{ctx}/${model?lower_case}/create" method="post">
             <#assign keys = properties?keys>
             <#list keys as key>
-            ${key?upper_case}: <input name="${key}"><br>
+            <input name="${key}" palceholder="${key?upper_case}"><br>
             </#list>
             <input type="submit" value="CREATE">
         </form>
