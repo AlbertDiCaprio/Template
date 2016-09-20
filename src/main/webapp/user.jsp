@@ -2,13 +2,13 @@
 <%@ include file="common/inc.jsp"%>
 <html>
 <head>
-    <title>admin page</title>
+    <title>user page</title>
 </head>
 <body>
-<c:if test="${sessionScope.user.role ne 'admin'}">
+<c:if test="${sessionScope.user.role ne 'user'}">
     <c:redirect url="${ctx}/index.jsp"/>
 </c:if>
-<h1>admin page</h1>
+<h1>user page</h1>
 ${sessionScope.user.username}
 </body>
 </html>
